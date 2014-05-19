@@ -1,0 +1,20 @@
+{
+  "name": "huevy-tool",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "huevy-tool": "index.js"
+  },
+  "author": "Huyovy <huyovy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "~0.6.1",
+    "twitter": "~0.2.9",
+    "q": "~1.0.1",
+    "lodash": "~2.4.1",
+    "mkdirp": "~0.5.0",
+    "geocoder": "~0.2.0",
+    "async": "~0.9.0"
+  }
+}
