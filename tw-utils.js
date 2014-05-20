@@ -24,9 +24,9 @@ Utils.prototype._getFriendsLoop = function(cur, users) {
     console.log('users:', _(data.users).pluck('screen_name').value().join(', '));
     console.log('---------');
     if (data.next_cursor_str !== '0') {
-      return this._getFriendsLoop(data.next_cursor_str, data.users.concat(users));
+      return this._getFriendsLoop(data.next_cursor_str, users.concat(data.users));
     } else {
-      return users;
+      return users.concat(data.users);
     }
   }.bind(this));
 
